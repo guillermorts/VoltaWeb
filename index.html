@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>Volta Team</title>
-  <meta charset="utf-8">
+  <title>Web Volta</title>
+  <meta charset="UTF-8">
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel="stylesheet" href="picnic.css">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Content Rotator with jQuery" />
+  <meta name="keywords" content="content rotator, jquery, fullscreen, content slider, autoplay, thumbnails, thumbs" />
+  <meta name="author" content="Codrops" />
+
+  <link rel="stylesheet" href="css/picnic.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
-  </head>
+
   <body>
     <nav class="encabezado tipografia">
         <a href="#" class="brand">
@@ -19,147 +23,244 @@
         <label for="bmenub" class="burger pseudo button">menu</label>
 
         <div class="menu">
-          <a href="https://www.facebook.com/VoltaUPV" class="pseudo button "><span class="RS fa fa-facebook-square" aria-hidden="true"></span></a>
-          <a href="https://twitter.com/VoltaUPV" class="pseudo button "><span class="RS fa fa-twitter-square" aria-hidden="true"></span></a>
-          <a href="#" class="pseudo button "><span class="RS fa fa-linkedin-square" aria-hidden="true"></span></a>
-          <a href="#" class="pseudo button "><span class="RS fa fa-youtube-play" aria-hidden="true"></span></a>
+          <a href="https://www.facebook.com/VoltaUPV" target="_blank" class="pseudo button "><span class="RS fa fa-facebook-square" aria-hidden="true"></span></a>
+          <a href="https://twitter.com/VoltaUPV" target="_blank" class="pseudo button "><span class="RS fa fa-twitter-square" aria-hidden="true"></span></a>
+          <a href="#" class="pseudo button "><span target="_blank" class="RS fa fa-linkedin-square" aria-hidden="true"></span></a>
+          <a href="#" class="pseudo button "><span target="_blank" class="RS fa fa-youtube-play" aria-hidden="true"></span></a>
           <a href="#" class="pseudo button "><span class="RS fa fa-envelope" aria-hidden="true"></span></a>
         </div>
+
+        <div class="menu">
+          <a href="#" class="pseudo button " id="toequipo"><span class="RS">EQUIPO</span></a>
+          <a href="#" class="pseudo button " id="tomotostudent"><span class="RS">MOTOSTUDENT</span></a>
+          <a href="#" class="pseudo button " id="toprototipo"><span class="RS">PROTOTIPO</span></a>
+          <a href="#" class="pseudo button " id="togaleria"><span class="RS">GALERIA</span></a>
+          <a href="#" class="pseudo button " id="topartners"><span class="RS">PARTNERS</span></a>
+        </div>
+
       </nav>
 
       <header class="heroIn">
         <div class="logoP tipografia">
-            <a href="#" id="toequipo">
+            <a href="#" id="toequipo2">
               <span class="fa fa-chevron-down flecha"></span>
             </a>
-          <div>
+          </div>
       </header>
 
-      <div class="heroEquipo tipografia">
+      <div class="heroEquipo tipografia" id="equipo">
         <div class="filtro">
-          <h1>EQUIPO</h1>
+        <h1>EL EQUIPO VOLTA</h1>
+
+          <div class="flex two">
+
+          <div>
+          <div class="container">
+
+          			<div class="content">
+
+          				<div class="wrapper">
+          					<div class="cr-container" id="cr-container">
+          						<div class="cr-content-wrapper" id="cr-content-wrapper">
+          							<div class="cr-content-container" id="content-1" style="display:block;">
+          								<img src="images/1.jpg"class="cr-img"/>
+          								<div class="cr-content">
+          									<div class="cr-content-headline">
+          										<h2>El ingeniero jefe</h2>
+          										<h3><span>El espiritu de nuestro equipo</span> <a href="#" class="cr-more-link"> leer más &rarr;</a></h3>
+          									</div>
+          									<div class="cr-content-text">
+          										<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+          										<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+          										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then</p>
+          									</div>
+          								</div>
+          							</div>
+          							<div class="cr-content-container" id="content-2">
+          								<img src="images/2.jpg"class="cr-img"/>
+          								<div class="cr-content">
+          									<div class="cr-content-headline">
+          										<h2>Nuestro Mecánico</h2>
+          										<h3><span>El que mas sabe de engranajes</span> <a href="#" class="cr-more-link"> leer más &rarr;</a></h3>
+          									</div>
+          									<div class="cr-content-text">
+          										<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+          										<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+          										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then</p>
+          										<p>Eveen the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+          										<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+          										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then</p>
+          										<p>Eveen the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+          										<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+          										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then</p>
+          									</div>
+          								</div>
+          							</div>
+          							<div class="cr-content-container" id="content-3">
+          								<img src="images/3.jpg"class="cr-img"/>
+          								<div class="cr-content">
+          									<div class="cr-content-headline">
+          										<h2>El señor Electronico</h2>
+          										<h3><span>Sabe como hacer saltar chispas</span> <a href="#" class="cr-more-link"> leer más &rarr;</a></h3>
+          									</div>
+          									<div class="cr-content-text">
+          										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then</p>
+          										<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+          										<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+          										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then</p>
+          										<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+          										<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+          									</div>
+          								</div>
+          							</div>
+          							<div class="cr-content-container" id="content-4">
+          								<img src="images/4.jpg"class="cr-img"/>
+          								<div class="cr-content">
+          									<div class="cr-content-headline">
+          										<h2>El mejor diseñador</h2>
+          										<h3><span>La aerodinamica con las mejores curvas</span> <a href="#" class="cr-more-link"> leer más &rarr;</a></h3>
+          									</div>
+          									<div class="cr-content-text">
+          										<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+          										<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+          										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then</p>
+          									</div>
+          								</div>
+          							</div>
+          							<div class="cr-content-container" id="content-5">
+          								<img src="images/5.jpg"class="cr-img"/>
+          								<div class="cr-content">
+          									<div class="cr-content-headline">
+          										<h2>Nuestro Social Manager</h2>
+          										<h3><span>Preparados para spamear</span> <a href="#" class="cr-more-link"> leer más &rarr;</a></h3>
+          									</div>
+          									<div class="cr-content-text">
+          										<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+          										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then</p>
+          									</div>
+          								</div>
+          							</div>
+          							<div class="cr-content-container" id="content-6">
+          								<img src="images/6.jpg"class="cr-img"/>
+          								<div class="cr-content">
+          									<div class="cr-content-headline">
+          										<h2>La parte Multimedia</h2>
+          										<h3><span>Luces, camaras y acción</span> <a href="#" class="cr-more-link"> leer más &rarr;</a></h3>
+          									</div>
+          									<div class="cr-content-text">
+          										<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+          										<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+          										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then</p>
+          									</div>
+          								</div>
+          							</div>
+          							<div class="cr-content-container" id="content-7">
+          								<img src="images/7.jpg"class="cr-img"/>
+          								<div class="cr-content">
+          									<div class="cr-content-headline">
+          										<h2>El señor de los numeros</h2>
+          										<h3><span>La rentavilidad como firma personal</span> <a href="#" class="cr-more-link"> leer más &rarr;</a></h3>
+          									</div>
+          									<div class="cr-content-text">
+          										<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+          										<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+          										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then</p>
+          									</div>
+          								</div>
+          							</div>
+          							<div class="cr-content-container" id="content-8">
+          								<img src="images/8.jpg"class="cr-img"/>
+          								<div class="cr-content">
+          									<div class="cr-content-headline">
+          										<h2>El piloto</h2>
+          										<h3><span>Nacido para correr</span> <a href="#" class="cr-more-link"> leer más &rarr;</a></h3>
+          									</div>
+          									<div class="cr-content-text">
+          										<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+          										<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+          										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then</p>
+          									</div>
+          								</div>
+          							</div>
+          						</div>
+          						<div class="cr-thumbs">
+          							<div data-content="content-1" class="cr-selected"><img src="images/thumbs/1.jpg"/><h4>El ingeniero jefe</h4></div>
+          							<div data-content="content-2"><img src="images/thumbs/2.jpg"/><h4>Nuestro mecánico</h4></div>
+          							<div data-content="content-3"><img src="images/thumbs/3.jpg"/><h4>El señor electronico</h4></div>
+          							<div data-content="content-4"><img src="images/thumbs/4.jpg"/><h4>El mejor Diseñador</h4></div>
+          							<div data-content="content-5"><img src="images/thumbs/5.jpg"/><h4>Nuestro Social Manager</h4></div>
+          							<div data-content="content-6"><img src="images/thumbs/6.jpg"/><h4>La parte multimedia</h4></div>
+          							<div data-content="content-7"><img src="images/thumbs/7.jpg"/><h4>El señor de los calculos</h4></div>
+          							<div data-content="content-8"><img src="images/thumbs/8.jpg"/><h4>El piloto</h4></div>
+          						</div>
+          					</div><!-- cr-container -->
+
+          					<div class="clr"></div>
+          				</div><!-- wrapper -->
+
+          				<div class="clr"></div>
+          			</div><!-- content -->
+          		</div><!-- container -->
+            </div>
+
+            <div>
+              <div class="tipografia presentacion">
+              <p>¿Cansado de que la universidad solo sea un sitio donde vas a estudiar?</p>
+              <p>Envíanos tu CV a voltaupv@gmail.com y únete a nuestro equipo para construir una moto eléctrica para competir en Motostudent, la competición universitaria internacional.</p>
+              <p>Y tú, ¿en qué área crees que podrías competir?</p>
+            </div>
+          </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="heroMotorStudent" id="motostudent">
+        <div class="filtro">
+          <h1 class="tipografia">¿QUÉ ES MOTOSTUDENT?</h1>
+
+          <div class="flex two">
           <div class="presentacion">
-          <p>¿Cansado de que la universidad solo sea un sitio donde vas a estudiar?</<p>
-          <p>Envíanos tu CV a voltaupv@gmail.com y únete a nuestro equipo para construir una moto eléctrica para competir en Motostudent, la competición universitaria internacional.</<p>
-          <p>Y tú, ¿en qué área crees que podrías competir?</<p>
+            <p>La Moto Engineering Fundation, junto con TechnoPark MotorLand, lanza la iniciativa Motostudent, una competición entre equipos universitarios de todas las universidades delmundo.</p>
+            <p>Dos categorías: Petrol y Electric</p>
+            <p>Tres objetivos: diseñar, desarrollar y validar un prototipo de una moto de competición</p>
+            <p>Un desafío: con creatividad e innovación, competir contra otros equipos de todo el mundodurante tres semestres.</p>
+            <p>“La nueva generación de ingenieros dispondrá de una desafiante competición para poner a prueba todas sus aptitudes y habilidades”</p>
           </div>
-
-            <div class="flex six">
-
-              <div class="sixth">
-                <div class="element1">
-                <span class="fa fa-chevron-left" aria-hidden="true"></span>
-                </div>
-              </div>
-
-              <div class="sixth">
-                <div class="element">
-                  <img class="imagen" src="profile.jpg">
-                  <div>
-                    <span>MIEMBRO 1</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="sixth">
-                <div class="element">
-                  <img class="imagen" src="profile.jpg">
-                  <div>
-                    <span>MIEMBRO 2</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="sixth">
-                <div class="element">
-                  <img class="imagen" src="profile.jpg">
-                  <div>
-                    <span>MIEMBRO 3</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="sixth">
-                <div class="element">
-                  <img class="imagen" src="profile.jpg">
-                  <div>
-                    <span>MIEMBRO 4</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="sixth">
-                <div class="element1">
-                <span class="fa fa-chevron-right" aria-hidden="true"></span>
-                </div>
-              </div>
-
+          <div>
+            <div class="video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/uJMzvmrQx_I"  allowfullscreen></iframe>
             </div>
+          </div>
+        </div>
 
         </div>
       </div>
 
-      <div class="heroMotorStudent">
-        <div class="filtro">
-          <h1 class="tipografia">¿QUE ES MOTOSTUDENT?</h1>
-
-          <div class="flew two">
-            <div class="first">
-              <div class="presentacion">
-                <p>La Moto Engineering Fundation, junto con TechnoPark MotorLand, lanza la iniciativa Motostudent, una competición entre equipos universitarios de todas las universidades delmundo.</p>
-                <p>Dos categorías: Petrol y Electric</p>
-                <p>Tres objetivos: diseñar, desarrollar y validar un prototipo de una moto de competición</p>
-                <p>Un desafío: con creatividad e innovación, competir contra otros equipos de todo el mundodurante tres semestres.</p>
-                <p>“La nueva generación de ingenieros dispondrá de una desafiante competición para poner a prueba todas sus aptitudes y habilidades”</p>
-              </div>
-            </div>
-
-          <div class="second">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/85MppyLJHz0"  allowfullscreen></iframe>
-          </div>
-        </div>
-
-      </div>
-      </div>
-
-      <div class="heroPrototipo">
+      <div class="heroPrototipo" id="prototipo">
         <h1>EL PROTOTIPO</h1>
+
+        <div class="flex two">
+          <div>
+              <img class="imagen" src="prototipo.png">
+          </div>
+
+          <div>
+          </div>
+        </div>
+
       </div>
 
-      <div class="heroGaleria tipografia">
+      <div class="heroGaleria tipografia" id="galeria">
         <div class="filtro">
           <h1>GALERIA</h1>
-          <div class="bordes">
-          <div class="tabs four">
-              <input id="tabC-1" type='radio' name='tabGroupC' checked >
-              <input id="tabC-2" type='radio' name='tabGroupC'>
-              <input id="tabC-3" type='radio' name='tabGroupC'>
-              <input id="tabC-4" type='radio' name='tabGroupC'>
-              <div class='row'>
-                <div>
-                  <img src="equipo.jpg">
-                </div>
-                <div>
-                  <img src="prototipo.jpg">
-                </div>
-                <div>
-                  <img src="moto1.jpg">
-                </div>
-                <div>
-                  <img src="moto2.jpg">
-                </div>
-              </div>
-              <label for="tabC-1"><img src="equipo.jpg"></label>
-              <label for="tabC-2"><img src="prototipo.jpg"></label>
-              <label for="tabC-3"><img src="moto1.jpg"></label>
-              <label for="tabC-4"><img src="moto2.jpg"></label>
-          </div>
-        </div>
+
+
 
         </div>
       </div>
 
-      <div>
+      <div id="partners">
         <div class="flex four">
           <div>
             <img class="imagen1"src="logo.png">
@@ -209,9 +310,23 @@
     </div>
 </footer>
 
-      <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-      <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
-      <script src="javascript.js"> </script>
-  </body>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script src="javascript.js"> </script>
 
-</html>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<!-- the jScrollPane script -->
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+		<script type="text/javascript" src="js/jquery.crotator.js"></script>
+		<script type="text/javascript">
+			$(window).load(function(){
+				$('#cr-container').crotator();
+			});
+		</script>
+
+
+
+    </body>
+  </html>
